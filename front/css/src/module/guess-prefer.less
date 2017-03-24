@@ -1,0 +1,121 @@
+@import "theme";
+
+
+.guess-prefer(){
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: #fffffe;
+
+    .top-links{
+        height: 40px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        a{
+            padding: 0 15px;
+            font-family: @theme-font;
+            font-size: @theme-size;
+            color: #3b5998;
+            &:hover{
+              color: red;
+            }
+        }
+    }
+    .guess-links{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;;
+        width: 100%;
+        height: 115px;
+        border: solid 1px #d6d6d6;
+        .img{
+            width: 25px;
+            height: 80px;
+            background-image: url('/images/guess-prefer.png');
+        }
+        .groups{
+            display: flex;
+            flex-direction: column;
+            width: 900px;
+            justify-content: space-between;
+            height: 80px;
+            .group{
+                display: flex;
+                flex-direction: row;
+                .name{
+                    color: @theme-light-blue;
+                    font-family: @theme-font;
+                    font-size: 14px;
+                }
+                .links{
+                    margin-left: 12px;
+                    display: flex;
+                    flex-direction: row;
+                    width: 800px;
+                    .link{
+                        width: 108px;
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        .type{
+                            width: 16px;
+                            height: 16px;
+                            align-self: flex-end;
+                            &.hot{
+                                background-image: url(/images/hot.png);
+
+                            }
+                        }
+                        a{
+                            font-family: @theme-font;
+                            font-size: 14px;
+                            color: #333333;
+                            margin-left: 4px;
+                            &.orange{
+                                color:@theme-orange;
+                            }
+
+                            &.light-blue{
+                                color:@theme-light-blue;
+                            }
+                        }
+                        a:hover{
+                          color: red;
+                          text-decoration: underline;
+                        }
+                    }
+                }
+
+                .change{
+                    color: #999;
+                    font-family: @theme-font;
+                    font-size: 14px;
+                    display: flex;
+                    justify-content: center;
+                    flex-grow: 1;
+                    cursor: pointer;
+                    &:hover{
+                      color: red;
+                      text-decoration: underline;
+                    }
+                }
+            }
+        }
+        .next{
+            width: 26px;
+            height: 80px;
+            display: flex;
+            background-image: url(/images/prefer-next.png);
+            &:hover{
+                background-image: url(/images/prefer-next-hover.png);
+
+            }
+        }
+    }
+
+}

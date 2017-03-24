@@ -1,0 +1,309 @@
+@import "theme";
+
+.search-section{
+    width: @site-width;
+    margin: auto;
+    .container{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        height: 132px;
+        &::before{
+            width: 155px;
+            content:" ";
+            height: 100%;
+        }
+        .search-input{
+
+
+            width: 746px;
+            height: 85px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            .search-logo{
+                width: 110px;
+                height: 85px;
+                background-repeat: no-repeat;
+                background-position: center;
+                // cursor: pointer;
+                // href:"http://www.baidu.com";
+            }
+            .content{
+                margin-left: 20px;
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+                justify-content: space-between;
+                .links{
+                    display: flex;
+                    flex-direction: row;
+                    a{
+                        display: flex;
+                        justify-content: center;
+                        font-family: @theme-font;
+                        font-size: 14px;
+                        width: 46px;
+                        height: 20px;
+                        color: #666666;
+                        margin-right:14px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        &:hover{
+                          color: #1e89e5;
+                        }
+                        &.selected{
+                            background-color: #b6e6fd;
+                            color: #16739f;
+                            font-weight: bold;
+                        }
+                    }
+                }
+                .input-area{
+                    display: flex;
+                    position: relative;
+                    flex-direction: row;
+                    justify-content: flex-start;
+                    align-items: center;
+                    height: 40px;
+                    .input{
+                        width: 520px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-start;
+                        border: solid 1px #b7b7b7;
+                        height: 100%;
+                        border-radius: 2px;
+                        flex-wrap: wrap;
+                        input{
+                            border: none;
+                            outline: none;
+                            background-color: transparent;
+                            font-family: 微软雅黑，serif;
+                            font-size: 14px;
+                            margin-left: 10px;
+                            width: 470px;
+                        }
+                        .dropdown{
+                            width: 24px;
+                            height: 24px;
+                            cursor: pointer;
+                            margin-left: 6px;
+                            background-repeat: no-repeat;
+                            background-image: url(/images/dropdown-arrow.png);
+                            background-position: center;
+                        }
+                        .dropdown-hot{
+                            width: 24px;
+                            height: 24px;
+                            cursor: pointer;
+                            margin-left: 6px;
+                            background-repeat: no-repeat;
+                            background-image: url(/images/dropdown-hot.png);
+                            background-position: center;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            font-family: arial,serif;
+                            font-size: 14px;
+                            color: white;
+                        }
+                        .suggestion{
+                            position: absolute;
+                            width: 520px;
+                            background-color: white;
+                            z-index: 10;
+                            top: 41px;
+                            border: solid 1px #b7b7b7;
+                            border-top: none;
+                            left: 0;
+                            display: flex;
+                            flex-direction: column;
+                            border-radius: 3px;
+                            .item{
+                                &::before{
+                                    content: " ";
+                                    width: 12px;
+                                    height: 100%;
+                                }
+                                height: 32px;
+                                display: flex;
+                                align-items: center;
+                                cursor: pointer;
+                                color: #3d3d3d;
+                                font-family: @theme-font;
+                                font-size: 14px;
+                                width: 100%;
+                                &:hover{
+                                    background-color: #fafafa;
+                                }
+                            }
+
+                        }
+
+                        .keywords{
+                            position: absolute;
+                            width: 520px;
+                            background-color: white;
+                            z-index: 10;
+                            top: 41px;
+                            border: solid 1px #b7b7b7;
+                            border-top: none;
+                            left: 0;
+                            display: flex;
+                            flex-direction: column;
+                            border-radius: 3px;
+                            .item{
+                                &::before{
+                                    content: " ";
+                                    width: 12px;
+                                    height: 100%;
+                                }
+                                height: 32px;
+                                display: flex;
+                                align-items: center;
+
+                                color: #3d3d3d;
+                                font-family: @theme-font;
+                                font-size: 14px;
+                                width: 100%;
+                                &:hover{
+                                    background-color: #fafafa;
+                                }
+                                .number{
+                                    width: 14px;
+                                    height: 14px;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    font-size: @theme-font;
+                                    color: white;
+                                    margin-right: 10px;
+                                    background-color: #b7b7b7;
+                                    border-radius: 3px;
+                                    &.hot{
+                                        background-color: #fb6f6f;
+                                    }
+                                }
+                                .new{
+                                    margin-left: 10px;
+                                    display: flex;
+                                    align-items: center;
+                                    font-family: arial;
+                                    font-size: 12px;
+                                    color: #e14343;
+                                    font-weight: bold;
+                                }
+                            }
+
+                        }
+
+                    }
+                    .search-btn{
+                        width: 80px;
+                        height: 100%;
+                        border: solid 1px #b7b7b7;
+                        border-radius: 2px;
+                        font-family:微软雅黑,serif;
+                        font-size: 16px;
+                        color: #4c4c4c;
+                        margin-left: 10px;
+                        cursor: pointer;
+                        outline: none;
+                        background-color: rgb(236,236,236);
+                        text-align: center;
+                    }
+
+                }
+                .bottom-links{
+                    display: flex;
+                    flex-direction: row;
+                    .search-bg{
+                      width: auto;
+                      height: auto;
+                      margin-right: 5px;
+                      z-index: 1;
+                      cursor:pointer;
+                      background-image: url(/images/icons/taobao.png);
+                      background-repeat: no-repeat;
+                      width: 16px;
+                      height: 16px;
+                    }
+                    a{
+                        font-family: @theme-font;
+                        font-size: @theme-size;
+                        color: #666666;
+                        margin-right: 20px;
+                    }
+                    a:hover{
+                      color: red;
+                      text-decoration: underline;
+                    }
+
+                }
+
+
+
+            }
+        }
+
+        .home-news{
+          width: 310px;
+          height: 60px;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          flex-wrap: wrap;
+          margin-left: 50px;
+          .item{
+            width: 50%;
+            height: 30px;
+            align-items: center;
+            display: flex;
+            flex-direction: row;
+            overflow: hidden;
+            line-height: 30px;
+            // target:_blank;
+            .ico{
+              width: 4px;
+              height: 4px;
+              border-radius: 2px;
+              background-color: #e23351;
+            }
+            a{
+              margin-left: 3px;
+              font-family: @theme-font;
+              font-size: @theme-size;
+              color: #666666;
+              width: calc(100% - 20px);
+              white-space: nowrap;
+              overflow: hidden;
+              // text-overflow: ellipsis;
+              target:_blank;
+              &:hover{
+                color: #e23351;
+              }
+            }
+          }
+        }
+
+    }
+    &.fixed{
+        position: fixed;
+        top: 0;
+        z-index: 999;
+        width: 100%;
+        background-color: #fcfafc;
+        .container{
+            width: @site-width;
+            margin: auto;
+            height: 70px;
+        }
+        border-bottom: solid 1px #d6d6d6;
+    }
+
+
+
+}

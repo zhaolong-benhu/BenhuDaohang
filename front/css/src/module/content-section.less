@@ -1,0 +1,46 @@
+@import "theme";
+@import "left-daily-news";
+@import "life-news";
+@import "shop-news";
+@import "game-news";
+@import "video-news";
+@import "head-news";
+@import "site-links";
+@import "guess-prefer";
+@import "other-links";
+@import "tool-links";
+
+.center-content{
+    width: @site-width;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    .left-content{
+        display: flex;
+        width: 270px;
+        flex-direction: column;
+        border-top: none;
+        .daily-news{
+            .daily-news();
+        }
+
+    }
+    .right-content{
+        display: flex;
+        width: 968px;
+        flex-direction: column;
+        .site-links{
+            .site-links();
+        }
+        .guess-prefer{
+            .guess-prefer();
+        }
+        .other-links{
+            .other-links();
+        }
+        .tool-links{
+            .tool-links();
+        }
+    }
+}

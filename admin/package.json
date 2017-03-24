@@ -1,0 +1,47 @@
+{
+  "name": "daohang",
+  "version": "1.0.0",
+  "description": "笨虎导航站",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "babel-node --harmony admin.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://sampson@192.168.1.111:8080/r/python/daohang.git"
+  },
+  "keywords": [
+    "笨虎导航"
+  ],
+  "author": "c++",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "babel-preset-react": "^6.5.0",
+    "body-parser": "^1.15.0",
+    "express": "^4.13.4",
+    "jade": "^1.11.0",
+    "jsonfile": "^2.2.3",
+    "lunar-calendar": "^0.1.4",
+    "react": "^0.14.7",
+    "react-dom": "^0.14.7",
+    "react-loadscript": "^1.0.2",
+    "react-router": "^2.0.0",
+    "superagent": "^1.7.2",
+    "superagent-jsonp": "0.0.6"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.6.4",
+    "babel-loader": "^6.2.3",
+    "babel-plugin-syntax-decorators": "^6.3.13",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-preset-es2015": "^6.5.0",
+    "babel-preset-stage-0": "^6.5.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-cssnano": "^2.1.1",
+    "gulp-less": "^3.0.5",
+    "gulp-util": "^3.0.7",
+    "webpack": "^1.12.13"
+  }
+}

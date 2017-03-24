@@ -1,0 +1,105 @@
+.floatleft-links{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &::before{
+        content: "左侧悬浮窗编辑:";
+        height: 40px;
+        width: 100%;
+        color: green;
+    }
+    .bottom{
+        width: 100%;
+        height: 20px;
+    }
+    .title{
+      // position: fixed;
+      display: flex;
+      flex-direction: row;
+
+      font-family: Open Sans,sans-serif;
+      font-size: 12px;
+      color: #333;
+      .title1{
+        margin-left: 40px;
+      }
+      .title2{
+        margin-left: 50px;
+      }
+      .title3{
+        margin-left: 130px;
+      }
+      .title4{
+        margin-left: 175px;
+      }
+      .title5{
+        margin-left: 60px;
+      }
+      .title6{
+        margin-left: 135px;
+      }
+    }
+    .item{
+        display: flex;
+        flex-direction: row;
+        min-height: 34px;
+        margin-bottom: 20px;
+        align-items: center;
+        flex-wrap: wrap;
+        }
+    .link{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            height: 100%;
+
+            font-family: Open Sans,sans-serif;
+            font-size: 12px;
+            color: #333;
+
+            &::before{
+                content: "链接：";
+                margin-top: 10px;
+                font-family: 'Open Sans', sans-serif;
+                font-size: 12px;
+                color: #333;
+            }
+
+            .name{
+              width: 70px;
+
+            }
+            .image{
+              width: 150px;
+
+            }
+            .url{
+              width: 200px;
+
+            }
+            .maintitle{
+              width: 70px;
+
+            }
+            .vicetitle{
+              width: 150px;
+
+            }
+            .titleimage{
+              width: 150px;
+
+            }
+
+        }
+
+    .submit{
+        align-content: center;
+        align-self: center;
+        width: 60px;
+        color: #fff;
+        background-color: #428bca;
+        border-color: #357ebd;
+    }
+  }

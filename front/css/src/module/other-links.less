@@ -1,0 +1,105 @@
+@import "theme";
+
+.other-links(){
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border: solid 1px #d6d6d6;
+    margin-top: 14px;
+    background-color: #fffffe;
+
+    .link-module{
+        display: flex;
+        flex-direction: column;
+
+        .titles{
+            display: flex;
+            height: 38px;
+            flex-direction: row;
+            a{
+                font-family: @theme-font;
+                font-size: 14px;
+                color: @theme-light-blue;
+            }
+            a:hover{
+              color: @theme-light-blue;
+              text-decoration: underline;
+            }
+            &.normal-title{
+                justify-content: center;;
+                align-items: center;
+                background-color: #fafafa;
+                a{
+                    margin: 0 18px;
+                    target:_blank;
+                }
+            }
+            &.main-title{
+                padding: 0 25px;
+                justify-content: space-between;
+                align-items: center;
+                border-bottom:solid 1px #d6d6d6;
+            }
+        }
+        .groups{
+            margin: 10px 0;
+            width: 100%;
+            .group{
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                height: 40px;
+                align-items: center;
+                .name{
+                    margin-left: 25px;
+                    width: 38px;
+                    font-family: @theme-font;
+                    font-size: 14px;
+                    color: @theme-light-blue;
+                    cursor: pointer;
+                }
+                .name:hover{
+                  text-decoration: underline;
+                  color: @theme-light-blue;
+                }
+
+                .links{
+                    display: flex;
+                    flex-direction: row;
+                    width: 900px;
+                    justify-content: center;
+                    a{
+                        margin: 0 20px;
+                        font-family: @theme-font;
+                        font-size: 14px;
+                        color: #333333;
+                        cursor: pointer;
+                    }
+                    a:hover{
+                      color: red;
+                      text-decoration: underline;
+                    }
+
+                    .change{
+                      color: black;
+                    }
+                }
+
+                .change{
+                    color: #999;
+                    font-family: @theme-font;
+                    font-size: 14px;
+                    display: flex;
+                    justify-content: center;
+                    flex-grow: 1;
+                    width:150px;
+                    &:hover{
+                      color: red;
+                      text-decoration: underline;
+                    }
+                }
+            }
+
+        }
+    }
+}

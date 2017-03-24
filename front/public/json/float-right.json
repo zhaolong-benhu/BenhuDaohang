@@ -1,0 +1,6 @@
+{
+  "modules":{
+    "ads":"/images/tmp/ads.png",
+    "links":[{"name":"视频","url":"http://v.baidu.com/"},{"name":"游戏","url":"http://www.7k7k.com/"},{"name":"生活","url":"http://www.chinanews.com/"},{"name":"笑话","url":"http://www.jokeji.cn/"}]
+  }
+}

@@ -1,0 +1,76 @@
+.tool-links{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+
+    &::before{
+        content: " ";
+        height: 20px;
+        width: 100%;
+    }
+
+    .module{
+        display: flex;
+        flex-direction: column;
+        border-top: solid 1px #333;
+        margin-top: 10px;
+        .title{
+            margin: 10px 10px;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 14px;
+            color: blue;
+            width: 100%;
+        }
+        .groups{
+            display: flex;
+            flex-direction: column;
+            .group{
+                display: flex;
+                flex-direction: column;
+                border-top: solid 1px #999;
+                margin-top: 10px;
+                justify-content: center;
+                .group-name{
+                    align-items: center;
+                    &::before{
+                        content: "组名:";
+                        margin: 0 10px;
+                        font-family: 'Open Sans', sans-serif;
+                        font-size: 12px;
+                    }
+                    padding: 10px 0;
+                    display: flex;
+                    align-items: center;
+
+                    .name{
+                        width: 50px;
+                        color:rgb(138, 56, 108);
+                    }
+                }
+                .links{
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    .link{
+                        &::before{
+                            content: "链接:";
+                            margin: 0 10px;
+                            font-family: 'Open Sans', sans-serif;
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .submit{
+        align-content: center;
+        align-self: center;
+        width: 60px;
+        color: #fff;
+        background-color: #428bca;
+        border-color: #357ebd;
+    }
+}

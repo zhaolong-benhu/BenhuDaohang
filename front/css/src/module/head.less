@@ -1,0 +1,157 @@
+@import "theme";
+
+.splitline{
+  height: 1px;
+  background-color: #e5e5e5;
+}
+
+.head{
+  width: @site-width;
+  margin: auto;
+  height: 80px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  .logo{
+    background: url('/images/logo.png');
+    width: 256px;
+    height: 71px;
+  }
+  .calender{
+    width: 185px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    margin-left: 65px;
+    a{
+      flex-grow: 1;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      color: #999999;
+      &:hover{
+        color: #e23351;
+      }
+      div{
+        font-family: @theme-font;
+        font-size: @theme-size;
+
+        &:first-child{
+          margin-right: 12px;
+
+        }
+      }
+    }
+  }
+
+
+  .weather{
+    width:380px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    font-family: @theme-font;
+    font-size: @theme-size;
+    color: #999999;
+    .city{
+      width: 45px;
+      text-align: center;
+      height: 56px;
+      align-self: center;
+    }
+    .date{
+      flex-grow: 1;
+      height: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      .icon{
+        width: 65px;
+        height: 56px;
+        background: url('/images/weather.png') no-repeat;
+      }
+      .info{
+        height: 56px;
+        display: flex;
+        flex-direction: column;
+        align-items:flex-start;
+        .brief{
+          flex-grow: 1;
+          display: flex;
+            a{
+              flex-grow: 1;
+              display: flex;
+              align-items: flex-start;
+              font-family: @theme-font;
+              font-size: @theme-size;
+              white-space: pre;
+              color: #808080;
+              &:hover{
+                color: #e23351;
+              }
+            }
+
+        }
+        .temperature{
+          flex-grow: 1;
+          display: flex;
+          align-items: center;
+        }
+      }
+    }
+    .today{
+        .info{
+            .brief{
+                align-items: flex-start;
+            }
+        }
+
+    }
+    .tomorrow{
+        .info{
+            .brief{
+                align-items: flex-center;}
+        }
+    }
+  }
+
+  .right-content{
+      display: flex;
+      flex-direction: row;
+      height: 100%;
+      flex-grow: 1;
+      .news{
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          a{
+              flex-grow: 1;
+              display: flex;
+              align-items: center;;
+              font-family: @theme-font;
+              font-size: @theme-size;
+              color: #808080;
+              &:hover{
+                color: #e23351;
+              }
+          }
+      }
+      .ads{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-grow: 1;
+          flex-direction: column;
+          height: 100%;
+          img{
+              align-self: flex-end;
+          }
+      }
+
+  }
+
+}

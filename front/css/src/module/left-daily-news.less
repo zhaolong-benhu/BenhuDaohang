@@ -1,0 +1,268 @@
+@import "theme";
+
+.daily-news(){
+    width: 100%;
+    border: solid 1px #d6d6d6;
+    margin-bottom: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fefefe;
+    position: relative;
+    .header{
+        height: 34px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        width: 100%;
+        &::before{
+            content: " ";
+            width: 10px;
+        }
+
+        .title{
+            font-family: @theme-font;
+            font-size: 14px;
+            color: #333333;
+            display: flex;
+            align-items: center;
+        }
+        .pages{
+            justify-content: flex-end;
+            display: flex;
+            flex-grow: 1;
+            align-items: center;
+            .info{
+                margin-right: 10px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                font-family: @theme-font;
+                font-size: 14px;
+                color: #bfbfbf;
+                .current{
+                    color: #666666;
+                }
+            }
+            .btns{
+                display: flex;
+                width: 48px;
+                justify-content: space-between;
+                margin-right: 10px;
+
+                a{
+                    display: flex;
+                    align-items: center;
+                    width: 20px;
+                    height: 16px;
+                    color: #bfbfbf;
+                    outline: none;
+                    border: solid 1px #bfbfbf;
+                    justify-content: center;
+
+                      &:hover{
+                        color: #1E89E5;
+                        border: solid 1px #1E89E5;
+
+                      }
+                }
+            }
+        }
+    }
+
+    // .example-enter {
+    //   opacity: 0.01;
+    // }
+    //
+    // .example-enter.example-enter-active {
+    //   opacity: 1;
+    //   transition: opacity 400ms ease-in;
+    // }
+    //
+    // .example-leave {
+    //   opacity: 1;
+    // }
+    //
+    // .example-leave.example-leave-active {
+    //   opacity: 0.01;
+    //   transition: opacity 10ms ease-in;
+    // }
+
+    .previews{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        left:0;
+        top:34px;
+
+
+        .img{
+            height: 80px;
+            width: 100%;
+             background-repeat: no-repeat;
+             background-size: cover;
+
+             &:hover{
+
+             }
+        }
+
+        .content{
+            height: 120px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            &::before{
+                width: 8px;
+                content: " ";
+            }
+            &::after{
+                width: 8px;
+                content: " ";
+            }
+            .items{
+                display: flex;
+                flex-direction: column;
+                height: 90px;
+                justify-content: space-around;
+                flex-grow: 1;
+                .item{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    width: 100%;
+                    .name{
+                        width: 28px;
+                    }
+                    .description{
+                        width: 200px;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                        white-space: nowrap;
+                    }
+                    a{
+                        font-family: @theme-font;
+                        font-size: 14px;
+                        color: #4c4c4c;
+                        height: 18px;
+
+                        &:hover{
+                          color: red;
+                          text-decoration: underline;
+                        }
+                    }
+                    .line{
+                        display: flex;
+                        width: 1px;
+                        background-color: #666666;
+                        height: 11px;
+                        margin-left: 10px;
+                        margin-right: 10px;
+
+                    }
+                }
+
+            }
+        }
+
+
+    }
+
+    .split-line{
+        width: 250px;
+        height: 1px;
+        background-color: #d7d7d7;
+        margin-bottom: 13px;
+        margin-top: 200px;
+    }
+
+    .links{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-family: @theme-font;
+        font-size: 14px;
+        color: #3d3d3d;
+        a{
+            font-family: @theme-font;
+            font-size: 14px;
+            color: #3d3d3d;
+
+            &:hover{
+              color: red;
+              text-decoration: underline;
+            }
+        }
+        .content{
+            width: 250px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            .item{
+                display: flex;
+                flex-direction: row;
+                width: 50%;
+                align-items: center;
+                height: 32px;
+
+                &:hover{
+                  color: red;
+                  // text-decoration: underline;
+                }
+                .icon{
+                    width: 16px;
+                    height: 16px;
+                    margin-right: 11px;
+                }
+                .dot{
+                    width: 3px;
+                    height: 3px;
+                    background: #3d3d3d;
+                    margin:0 4px;
+                }
+
+            }
+            .tips{
+                width: 240px;
+                height: 30px;
+                display: flex;
+                align-items: center;
+                font-size: 12px;
+                color: #00acec;
+                justify-content: center;
+                padding-top: 2px;
+
+                .text{
+                  // display: block;
+                }
+                &.left{
+                    background-image: url('/images/news/left-tips.png');
+                }
+                &.right{
+                    background-image: url('/images/news/right-tips.png');
+                }
+                .close
+                {
+                    margin-left: 25px;
+                    background-image: url('/images/news/close.png');
+                    background-repeat: no-repeat;
+                    cursor: pointer;
+                    width: 9px;
+                    height: 9px;
+
+                    &:hover{
+                      background-image: url('/images/news/close.png');
+                    }
+                }
+            }
+        }
+    }
+
+    .links-split-line{
+        width: 250px;
+        height: 1px;
+        border-top: dashed 1px #d7d7d7;
+    }
+
+}

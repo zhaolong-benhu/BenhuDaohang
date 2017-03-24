@@ -1,0 +1,27 @@
+doctype html
+html
+
+    head 
+        meta(http-equiv="X-UA-Compatible" content="IE=edge,chrome=1")
+        meta(name="renderer" content="webkit")
+        title 笨虎导航站
+        link(rel='stylesheet', href='/css/index.css')
+        link(rel='shortcut icon',href='/images/favicon.ico' type='image/x-icon')
+        script.
+            var g_footer_json = !{(footer_json)};
+    body
+        div(id='app')
+        script(src="/js/index.js")
+        script.
+            var _hmt = _hmt || [];
+            (function() {
+              var hm = document.createElement("script");
+              hm.src = "//hm.baidu.com/hm.js?0349ef3604adaa85aa41349496a05aaf";
+              var s = document.getElementsByTagName("script")[0]; 
+              s.parentNode.insertBefore(hm, s);
+            })();
+
+        div(style='display:none')
+            script. 
+                var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+                document.write(unescape("%3Cspan id='cnzz_stat_icon_1257833226'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1257833226' type='text/javascript'%3E%3C/script%3E"));

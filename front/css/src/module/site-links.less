@@ -1,0 +1,133 @@
+@import "theme";
+
+.site-links(){
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;;
+    border: solid 1px #b6e6fd;
+    align-items: center;
+    background-color: #fefefe;
+    .item{
+        display: flex;
+        flex-direction: row;
+        width: 150px;
+        height: 32px;
+        align-items: center;
+        .icon{
+            width: 16px;
+            height: 16px;
+            margin-right: 10px;
+        }
+        a{
+            display: flex;
+            justify-content: space-between;
+            color: #333333;
+            font-family: @theme-font;
+            font-size: 14px;
+            white-space: pre;
+            &:hover{
+                color: red;
+                text-decoration:underline;
+            }
+        }
+
+        .dot{
+            width: 2px;
+            height: 2px;
+            background-color: #3d3d3d;
+            margin: 0 4px;
+        }
+    }
+
+    .main-links{
+        display: flex;
+        margin-top: 20px;
+        flex-direction: row;
+        width: 900px;
+        flex-wrap: wrap;
+    }
+
+    .split-line{
+        width: 900px;
+        height: 1px;
+        background-color: #f2f2f2;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .addon-links{
+        width: 900px;
+        display: flex;
+        margin-bottom: 20px;
+        flex-wrap: wrap;
+        .light-blue{
+            color: @theme-light-blue;
+            &:hover{
+                color: @theme-light-blue;
+            }
+        }
+        .orange{
+            color: @theme-orange;
+            &:hover{
+                color: @theme-orange;
+            }
+        }
+        .bubble{
+            width: 34px;
+
+            word-wrap: break-word;
+            font-size: @theme-size;
+            font-family: @theme-font;
+            color: #ff4209;
+            background-image: url('/images/link-bubble.png');
+            span{
+                white-space:normal;
+                display: flex;
+                flex-wrap: wrap;
+                height: 30px;
+                padding-left: 8px;
+            }
+            &:hover{
+                text-decoration: none;
+                color:#ff4209;
+            }
+
+        }
+        .image{
+            width: 34px;
+            height: 30px;
+            margin-left: 4px;
+            display: flex;
+            span{
+                width: 34px;
+                height: 30px;
+                display: flex;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+
+        }
+        .hot{
+            width: 34px;
+            height: 30px;
+            margin-left: 4px;
+            display: flex;
+            background-image: url('/images/hot-dot.png');
+            background-position: left 5px;
+            background-repeat: no-repeat;
+            span{
+                display: none;
+                width: 34px;
+                height: 30px;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+            &:hover{
+                background-image: none;
+                span{
+                    display: flex;
+                }
+            }
+        }
+    }
+}

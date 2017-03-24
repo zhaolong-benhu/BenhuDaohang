@@ -1,0 +1,64 @@
+
+@site-width:1250px;
+
+@top-header-back-color:#f7f7f7;
+
+@footer-back-color: #d0d0d0;
+
+@theme-back-color:#f7f7f7;
+
+@theme-font:"宋体,serif";
+
+@theme-size:12px;
+
+@theme-light-blue:#1e89e5;
+
+@theme-orange:#ff5500;
+
+@theme-light-green:#118850;
+
+.orange{
+    color:@theme-orange!important;
+}
+
+.light-blue{
+    color:@theme-light-blue!important;
+}
+
+.light-green{
+  color:@theme-light-green!important;
+}
+
+body{
+  padding: 0;
+  margin: 0;
+}
+
+a{
+  outline: none;
+  text-decoration: none;
+
+}
+
+.theme-img-bg{
+
+    position: relative;
+    &::before{
+
+        content: " ";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        left: 0;
+        top:0;
+        opacity: .2;
+        display: none;
+
+    }
+    &:hover{
+        &::before{
+            display: block;
+        }
+    }
+}

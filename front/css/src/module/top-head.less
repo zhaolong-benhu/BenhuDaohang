@@ -1,0 +1,31 @@
+@import "theme";
+
+
+
+.top-header{
+  background-color: @top-header-back-color;
+  height: 30px;
+  .content{
+    width: @site-width;
+    margin: auto;
+    height: 100%;
+    .links{
+      width: calc( 3 * 67px);
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      height: 100%;
+      a{
+        font-family: @theme-font;
+        font-size: @theme-size;
+        color: #808080;
+        display: block;
+        flex-grow: 1;
+        &:hover{
+          color: #e00341;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,75 @@
+@import "theme";
+
+
+.float-right{
+
+    position: fixed;
+    bottom: 20px;
+    margin-top: -120px;
+    z-index: 1000;
+    width: 115px;
+    left: 50%;
+    margin-left: 630px;
+    overflow: hidden;
+    display: flex;
+    .content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .ads{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .link{
+            width: 40px;
+            height: 28px;
+            background-image: url('/images/float-right-link.png');
+            margin-bottom: 4px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            font-size: @theme-size;
+            font-family: @theme-font;
+            color: #808080;
+            &::before{
+                content: " ";
+                height: 5px;
+            }
+            &:hover{
+              color: #FFFFFF;
+              background-image: url('/images/float-right-hover.png');
+            }
+        }
+    }
+
+    .down{
+      // background-color: #808080;
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+      background-image: url('/images/gotobottom.png');
+      // background-repeat: no-repeat;
+
+        &:hover{
+          background-image: url('/images/gotobottom-hover.png');
+          // background-repeat: no-repeat;
+        }
+
+    }
+
+    .up{
+      // background-color: #808080;
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+      background-image: url('/images/gototop.png');
+      // background-repeat: no-repeat;
+
+        &:hover{
+          background-image: url('/images/gototop-hover.png');
+          // background-repeat: no-repeat;
+        }
+
+    }
+}

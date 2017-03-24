@@ -1,0 +1,310 @@
+﻿{
+    "data": {
+        "previews": [{
+            "banner":{
+                "img": "http://www.114la.com/static/upd/201603/072150292029c3d0.png",
+                "url":""
+            },
+            "links": [{
+                "name": "头条",
+                "url": "http://news.hao12http://mini.eastday.com/a/n160307210200298.html",
+                "content": "老人遗体在殡仪馆失踪 馆方:烧错了"
+            }, {
+                "name": "视频",
+                "url": "http://v.qq.com/page/a/0/b/a01876ddh0b.html",
+                "content": "倪妮井柏然热恋 甜蜜同居两晚"
+            }, {
+                "name": "购物",
+                "url": "http://www.benhu.com",
+                "content": "女王驾到 春季必买新品1元起抢"
+            }]
+        }, {
+            "banner":{
+                "img": "http://www.114la.com/static/upd/201602/29185515e24d0323.jpg",
+                "url":""
+            },
+            "links": [{
+                "name": "小说",
+                "url": "http://book.114la.com/shudan-2189.html",
+                "content": "吊丝男医生，忍辱与三美女同居"
+            }, {
+                "name": "搞笑",
+                "url": "http://gaoxiao.114la.com/detail/185573.html",
+                "content": "傅艺伟事件说明朝阳群众可降妖"
+            }, {
+                "name": "游戏",
+                "url": "http://xiaoyouxi.114la.com/zt/yxs13/?t",
+                "content": "好玩坦克大战游戏 战争一触即发"
+            }]
+        }],
+        "top_links": [{
+            "links": [{
+                "name": "新闻",
+                "url": "http://news.114la.com/"
+            }, {
+                "name": "头条",
+                "url": "http://news.114la.com/headlines.html?t"
+            }],
+            "icon": "/images/news/top.png"
+        }, {
+            "links": [{
+                "name": "游戏",
+                "url": "http://game.114la.com/"
+            }, {
+                "name": "小游戏",
+                "url": "http://xiaoyouxi.114la.com/?1"
+            }],
+            "icon": "/images/news/joypad.png"
+        }, {
+            "links": [{
+                "name": "电视剧",
+                "url": "http://v.hao123.com/dianshi/"
+            }, {
+                "name": "视频",
+                "url": "http://v.baidu.com/"
+            }],
+            "icon": "/images/news/tv.png"
+        }, {
+            "links": [{
+                "name": "电影",
+                "url": "http://v.qq.com/movie/"
+            }, {
+                "name": "综艺",
+                "url": "http://www.iqiyi.com/zongyi/"
+            }],
+            "icon": "/images/news/video.png"
+        }, {
+            "links": [{
+                "name": "购物",
+                "url": "http://www.benhu.com"
+            }, {
+                "name": "团购",
+                "url": "http://www.benhu.com"
+            }],
+            "icon": "/images/news/shop.png"
+        }, {
+            "links": [{
+                "name": "音乐",
+                "url": "http://music.iqiyi.com/"
+            }, {
+                "name": "小说",
+                "url": "http://www.hongxiu.com/"
+            }],
+            "icon": "/images/news/headphones.png"
+        }, {
+            "links": [{
+                "name": "旅游",
+                "url": "http://www.tuniu.com/"
+            }, {
+                "name": "机票",
+                "url": "http://www.ctrip.com"
+            }],
+            "icon": "/images/news/trip.png"
+        },{
+            "links": [{
+                "name": "彩票",
+                "url": "http://cp.360.cn/"
+            }, {
+                "name": "理财",
+                "url": "http://www.114la.com/licai/?1"
+            }],
+            "icon": "/images/news/8.png"
+        }],
+        "tips": {
+            "index": "1",
+            "text": "一同进入海贼王热血的冒险世界吧",
+            "show": true
+        },
+        "bottom_links": [{
+            "links": [{
+                "name": "工具",
+                "url": "http://tool.114la.com/"
+            }, {
+                "name": "测速",
+                "url": "http://tool.114la.com/live/speed/"
+            }],
+            "icon": "/images/news/tool.png"
+        }, {
+            "links": [{
+                "name": "搞笑",
+                "url": "http://gaoxiao.114la.com/?tool"
+            }, {
+                "name": "星座",
+                "url": "http://xingzuo.114la.com/?t"
+            }],
+            "icon": "/images/news/joke.png"
+        }, {
+            "links": [{
+                "name": "违章",
+                "url": "http://www.hzwzcx.com/"
+            }, {
+                "name": "网盘",
+                "url": "http://pan.baidu.com/"
+            }],
+            "icon": "/images/news/traffic-light.png"
+        }, {
+            "links": [{
+                "name": "快递",
+                "url": "http://www.hzwzcx.com/"
+            }, {
+                "name": "邮编",
+                "url": "http://pan.baidu.com/"
+            }],
+            "icon": "/images/news/f0d1.png"
+        }],
+        "state": {
+            "previews": [{
+                "img": "http://www.114la.com/static/upd/201603/072150292029c3d0.png",
+                "links": [{
+                    "name": "头条",
+                    "url": "http://news.hao12http://mini.eastday.com/a/n160307210200298.html",
+                    "content": "老人遗体在殡仪馆失踪 馆方:烧错了"
+                }, {
+                    "name": "视频",
+                    "url": "http://v.qq.com/page/a/0/b/a01876ddh0b.html",
+                    "content": "倪妮井柏然热恋 甜蜜同居两晚"
+                }, {
+                    "name": "购物",
+                    "url": "http://www.benhu.com",
+                    "content": "女王驾到 春季必买新品1元起抢"
+                }]
+            }, {
+                "img": "http://www.114la.com/static/upd/201602/29185515e24d0323.jpg",
+                "links": [{
+                    "name": "小说",
+                    "url": "http://book.114la.com/shudan-2189.html",
+                    "content": "吊丝男医生，忍辱与三美女同居"
+                }, {
+                    "name": "搞笑",
+                    "url": "http://gaoxiao.114la.com/detail/185573.html",
+                    "content": "傅艺伟事件说明朝阳群众可降妖"
+                }, {
+                    "name": "游戏",
+                    "url": "http://xiaoyouxi.114la.com/zt/yxs13/?t",
+                    "content": "好玩坦克大战游戏 战争一触即发"
+                }]
+            }, {
+                "img": "https://gss1.bdstatic.com/5eN1dDebRNRTm2_p8IuM_a/res/r/image/2016-03-08/6382d405ffc38389315d22ef9c3f0ad4.jpg",
+                "links": [{
+                    "name": "社会",
+                    "url": "http://www.bashan.com/yaowen/30536.html",
+                    "content": "合肥少女被官二代毁容5年后仍未拿到赔款"
+                }, {
+                    "name": "娱乐",
+                    "url": "http://ent.ifeng.com/a/20160308/42586247_0.shtml",
+                    "content": "周润发胞姐公园散心 坐长椅上打瞌睡"
+                }, {
+                    "name": "军事",
+                    "url": "http://news.ifeng.com/a/20160307/47726565_0.shtml#p=1",
+                    "content": "四川妹子在美军当兵 操控关键设备"
+                }]
+            }],
+            "top_links": [{
+                "links": [{
+                    "name": "新闻",
+                    "url": "http://news.114la.com/"
+                }, {
+                    "name": "头条",
+                    "url": "http://news.114la.com/headlines.html?t"
+                }],
+                "icon": "/images/news/top.png"
+            }, {
+                "links": [{
+                    "name": "游戏",
+                    "url": "http://game.114la.com/"
+                }, {
+                    "name": "小游戏",
+                    "url": "http://xiaoyouxi.114la.com/?1"
+                }],
+                "icon": "/images/news/top.png"
+            }, {
+                "links": [{
+                    "name": "电视剧",
+                    "url": "http://v.hao123.com/dianshi/"
+                }, {
+                    "name": "视频",
+                    "url": "http://v.baidu.com/"
+                }],
+                "icon": "/images/news/top.png"
+            }, {
+                "links": [{
+                    "name": "电影",
+                    "url": "http://v.qq.com/movie/"
+                }, {
+                    "name": "综艺",
+                    "url": "http://www.iqiyi.com/zongyi/"
+                }],
+                "icon": "/images/news/top.png"
+            }, {
+                "links": [{
+                    "name": "购物",
+                    "url": "http://www.benhu.com"
+                }, {
+                    "name": "团购",
+                    "url": "http://www.benhu.com"
+                }],
+                "icon": "/images/news/top.png"
+            }, {
+                "links": [{
+                    "name": "音乐",
+                    "url": "http://music.iqiyi.com/"
+                }, {
+                    "name": "小说",
+                    "url": "http://www.hongxiu.com/"
+                }],
+                "icon": "/images/news/top.png"
+            }, {
+                "links": [{
+                    "name": "旅游",
+                    "url": "http://www.tuniu.com/"
+                }, {
+                    "name": "机票",
+                    "url": "http://www.ctrip.com"
+                }],
+                "icon": "/images/news/top.png"
+            }],
+            "tips": {
+                "index": "1",
+                "text": "一同进入海贼王热血的冒险世界吧",
+                "show": true
+            },
+            "bottom_links": [{
+                "links": [{
+                    "name": "彩票",
+                    "url": "http://cp.360.cn/"
+                }, {
+                    "name": "理财",
+                    "url": "http://www.114la.com/licai/?1"
+                }],
+                "icon": "/images/news/top.png"
+            }, {
+                "links": [{
+                    "name": "工具",
+                    "url": "http://tool.114la.com/"
+                }, {
+                    "name": "测速",
+                    "url": "http://tool.114la.com/live/speed/"
+                }],
+                "icon": "/images/news/top.png"
+            }, {
+                "links": [{
+                    "name": "搞笑",
+                    "url": "http://gaoxiao.114la.com/?tool"
+                }, {
+                    "name": "星座",
+                    "url": "http://xingzuo.114la.com/?t"
+                }],
+                "icon": "/images/news/top.png"
+            }, {
+                "links": [{
+                    "name": "违章",
+                    "url": "http://www.hzwzcx.com/"
+                }, {
+                    "name": "网盘",
+                    "url": "http://pan.baidu.com/"
+                }],
+                "icon": "/images/news/top.png"
+            }]
+        }
+    }
+}

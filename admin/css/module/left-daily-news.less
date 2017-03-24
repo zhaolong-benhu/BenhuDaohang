@@ -1,0 +1,116 @@
+.left-daily-news{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    font-size: 12px;
+    &::before{
+        content: " ";
+        height: 20px;
+        width: 100%;
+    }
+
+    .title{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 50px;
+        color: blue;
+        margin: 0 10px;
+    }
+    .input-label{
+        color: #333;
+        justify-content: center;
+        text-align: center;
+
+        width: 50px;
+    }
+
+    .previews{
+        display: flex;
+        flex-direction: column;
+
+        .preview{
+            display: flex;
+            flex-direction: column;
+            .ads{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                .label{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    height: 50px;
+                    color: rgb(138, 56, 108);
+                    margin: 0 10px;
+                }
+                input{
+                    width: 250px;
+                    height: 20px;
+                }
+            }
+
+            .links{
+                display: flex;
+                flex-direction: column;;
+                .link{
+
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    .input{
+                        display: flex;
+                        align-items: center;
+                        margin-right: 10px;
+
+
+                        input{
+                            width: 250px;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+
+    .top-links,.bottom-links{
+        display: flex;
+        flex-direction: column;
+        .item{
+            display: flex;
+            flex-direction: row;
+            .icon{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+            }
+            .link{
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+    .tip-area{
+        .tip{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            input{
+                width: 250px;
+            }
+        }
+    }
+
+    .submit{
+        align-content: center;
+        align-self: center;
+        width: 60px;
+        color: #fff;
+        background-color: #428bca;
+        border-color: #357ebd;
+        margin-top: 20px;
+    }
+}

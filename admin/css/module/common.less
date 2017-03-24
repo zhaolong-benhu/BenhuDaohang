@@ -1,0 +1,91 @@
+.layout{
+
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    .head{
+        height: 50px;
+        background-color: #2c3742;
+        display: flex;
+        align-items: center;
+        color: white;
+        justify-content: center;
+        .logo{
+            font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+            font-weight: 500;
+            line-height: 1.1;
+        }
+    }
+
+    .container
+    {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+
+        .navs{
+            border-radius: 10px;
+            padding: 10px;
+            border-left: 1px solid #eee;
+            border-top: 1px solid #eee;
+            border-right: 2px solid #eee;
+            border-bottom: 2px solid #eee;
+            width: 240px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .nav{
+                height: 50px;
+                display: flex;
+                width: 200px;
+                align-items: center;
+                background: #fff;
+                justify-content: center;
+
+                &.daily{
+                  a{
+                    color:rgb(168, 108, 106);
+
+                  }
+                }
+                &.weekly{
+                  a{
+                    color: rgb(79, 142, 181);
+                  }
+                }
+
+                &.deploy{
+                  a{
+                    color: red;
+                  }
+                }
+
+                a{
+                    font-size: 14px;
+                    line-height: 20px;
+                    padding: 15px 15px;
+                    color: #999;
+                    display: block;
+                    font-weight: bold;
+                    background: none;
+                    text-decoration: none;
+                    border-top: 0px;
+                    font-weight: bold;
+                    &:hover{
+                        color: rgb(85, 85, 85);
+                    }
+                    &.active {
+                      color: green;
+                    }
+                }
+            }
+
+        }
+        .right-content{
+            flex-grow: 1;
+        }
+
+
+    }
+}
